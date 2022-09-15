@@ -1,0 +1,40 @@
+.ResumeStyle {
+
+    .experience {
+
+
+        .experienceTitle {
+            margin-top: 10%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 30px;
+            width: 100%;
+
+            a {
+                margin-right: 16px;
+
+                svg {
+                    font-size: 2.2rem;
+                }
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 1.4rem;
+                color: var(--resume-color);
+            }
+        }
+
+        .experienceTitle:last-child {
+            padding-top: 100px;
+        }
+
+        .listItem {
+            width: 100%;
+            border-left: 2px solid var(--border-color);
+            z-index: -1;
+        }
+
+    }
+}

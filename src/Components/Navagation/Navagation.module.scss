@@ -1,0 +1,89 @@
+.NavagationStyle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid var(--border-color);
+
+    .froflie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 0;
+
+        img {
+            width: 65%;
+            border-radius: 50%;
+            border: 8px solid var(--border-color);
+        }
+
+        span {
+            padding-top: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--primary-color-light);
+        }
+    }
+
+    .listNavItem {
+        width: 100%;
+        text-align: center;
+
+        .btnActive {
+            color: var(--white-color);
+            background-color: var(--primary-color);
+        }
+
+        li {
+            display: block;
+
+            a {
+                display: block;
+                position: relative;
+                padding: 0.4rem 0;
+                z-index: 10;
+                font-weight: 600;
+                letter-spacing: 1px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 30%;
+                    width: 0;
+                    background-color: var(--primary-color);
+                    transition: all 0.4s cubic-bezier(.12, .95, .66, .74);
+                    z-index: 3;
+                    opacity: 0.21;
+                    transform-origin: right;
+                }
+            }
+
+            a:hover::before {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid var(--border-color);
+
+        p {
+            padding: 1.2rem 0;
+            font-size: 0.8rem;
+        }
+    }
+
+}

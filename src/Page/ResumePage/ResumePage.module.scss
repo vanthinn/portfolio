@@ -1,0 +1,12 @@
+.ResumeStyle {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+
+    .SkillList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

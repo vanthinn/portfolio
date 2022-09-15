@@ -1,0 +1,33 @@
+
+@keyframes animateOn {
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animateOff {
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+.SdiebarStyled {
+    width: 14rem;
+    position: fixed;
+    height: 100%;
+    background-color: var(--sidebar-dark-color);
+    @media (max-width: 1023px){  
+            z-index: 900;
+            width: 11rem;       
+            transform: translateX(-100%)
+    }
+}

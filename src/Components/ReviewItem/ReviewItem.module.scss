@@ -1,0 +1,43 @@
+.RevivewItemStyled {
+    padding: 2rem 1rem;
+    border-left: 6px solid var(--border-color);
+    background-color: var(--background-dark-grey);
+    position: relative;
+    width: 100%;
+
+    //&:not(:first-child) {}
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 2rem;
+        border-width: .8rem;
+        top: 100%;
+        border-style: solid;
+        border-color: var(--background-dark-grey) transparent transparent var(--background-dark-grey);
+    }
+
+    p {
+        font-size: 0.8rem;
+        padding: 1rem 0;
+        color: var(--service-color);
+    }
+
+    @media (max-width: 1023px) {
+        &:not(:last-child) {
+
+            margin-bottom: 3rem;
+        }
+
+        padding: 2rem 0;
+    }
+
+    @media (min-width: 740px) and (max-width :1023px) {}
+
+    @media (max-width: 739px) {
+        p {
+            padding: 0;
+        }
+    }
+
+}

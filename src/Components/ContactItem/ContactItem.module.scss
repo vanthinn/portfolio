@@ -1,0 +1,109 @@
+.ContactItemStyle {
+
+
+    .connect {
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        h4 {
+            font-size: 1.8rem;
+            color: var(--font-title-color-1);
+
+            span {
+                font-size: 1.8rem;
+                color: var(--primary-color);
+            }
+        }
+
+        .connectContent {
+
+            .connectPhoneNumber,
+            .connectEmail,
+            .connectLocate {
+                display: flex;
+                padding-top: 20px;
+                padding-left: 32%;
+                align-items: center;
+
+                a {
+                    width: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 50px;
+                    background-color: var(--connect-color);
+                    color: var(--primary-color);
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+
+                p {
+                    width: 70%;
+                    color: var(--font-title-color-1)
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 1023px) {
+        .connect {
+            padding-top: 220px;
+
+            .connectContent {
+                padding-top: 40px;
+
+                .connectPhoneNumber,
+                .connectEmail,
+                .connectLocate {
+
+                    padding-left: 20%;
+                }
+            }
+
+        }
+    }
+
+    @media (min-width: 740px) and (max-width :1023px) {}
+
+    @media (max-width: 739px) {
+        .connect {
+            padding-top: 100px;
+
+            h4 {
+                margin-left: 14%;
+                width: 75%;
+                font-size: 1.5rem;
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .connectContent {
+
+                .connectPhoneNumber,
+                .connectEmail,
+                .connectLocate {
+                    padding-left: 10%;
+
+                    a {
+                        height: 45px;
+                        width: 45px;
+                        margin-right: 20px;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        word-wrap: break;
+                    }
+                }
+            }
+
+        }
+    }
+}

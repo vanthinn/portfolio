@@ -1,0 +1,85 @@
+.ResumeItemStyle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    .leftContent {
+        width: 30%;
+
+        h4 {
+            margin-left: 12px;
+            font-size: 0.9rem;
+            font-weight: 300;
+            position: relative;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 20%;
+                left: -20px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 2px solid var(--border-color);
+                background-color: var(--background-dark-color);
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 50px;
+                top: 50%;
+                left: 70%;
+                height: 1px;
+                background-color: var(--border-color);
+            }
+        }
+    }
+
+    .rightContent {
+        width: 70%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            font-size: 1.6rem;
+            color: var(--font-title-resume);
+            margin-top: -4px;
+        }
+
+        h6 {
+            font-size: 1rem;
+            color: var(--resume-color);
+            padding: 10px 0 16px 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+    }
+
+    @media (max-width: 739px) {
+        .leftContent {
+            h4 {
+
+                font-size: 0.8rem;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 0px;
+
+                }
+            }
+        }
+
+        .rightContent {
+            h5 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

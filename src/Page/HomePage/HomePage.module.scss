@@ -1,0 +1,128 @@
+.HomePageStyle {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 2;
+
+    .info {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 80%;
+
+        h1,
+        span {
+            font-size: 3.2rem;
+        }
+
+        h1 {
+            color: var(--font-title-color-1);
+        }
+
+
+        span {
+            color: var(--primary-color)
+        }
+
+        .animation {
+            text-align: center;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+
+            span {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+    }
+
+    .icons {
+        position: absolute;
+        bottom: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+
+        a {
+            border: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all .4s ease-in-out;
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            color: var(--face-color);
+
+            &:hover {
+                border: 2px solid var(--primary-color);
+                color: var(--primary-color);
+            }
+
+            &:not(:last-child) {
+                margin-right: 1.1rem;
+            }
+        }
+
+        .iconGithub {
+            svg {
+                color: var(--github-color);
+            }
+
+            &:hover {
+                border: 2px solid #5F4687;
+                color: #5F4687;
+            }
+        }
+
+        .iconYoutube {
+            svg {
+                color: var(--youtube-color);
+            }
+
+            &:hover {
+                border: 2px solid red;
+                color: red;
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {}
+
+    @media (min-width: 740px) and (max-width :1023px) {}
+
+    @media (max-width: 739px) {
+        .info {
+
+            h1,
+            span {
+                font-size: 2rem;
+            }
+
+            .animation {
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+
+            p {
+                margin-top: 24px;
+                font-size: 0.7rem;
+            }
+        }
+
+        .icons {
+            bottom: 30%;
+
+        }
+    }
+}
