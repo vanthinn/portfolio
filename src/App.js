@@ -12,7 +12,7 @@ import Arrayparticles from './Data/particles.js'
 import Brightness6Icon from '@mui/icons-material/Brightness6';
 import Switch from '@mui/material/Switch';
 import './App.css';
-import { useState, useRef ,useEffect} from 'react'
+import { useState, useRef} from 'react'
 import clsx from 'clsx';
 import MenuIcon from '@mui/icons-material/Menu';
 
