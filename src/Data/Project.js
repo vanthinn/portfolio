@@ -1,48 +1,76 @@
-import HomePage from '../Image/ImageProjectMu/HomePage.png'
-import MainLineupPage from '../Image/ImageProjectMu/MainLineupPage.png'
-import ManagerPage from '../Image/ImageProjectMu/ManagerPage.png'
-import LegendPage from '../Image/ImageProjectMu/LegendPage.png'
+import HomePageMU from "../Image/ImageProjectMu/HomePage.png";
+import MainLineupPage from "../Image/ImageProjectMu/MainLineupPage.png";
+import ManagerPage from "../Image/ImageProjectMu/ManagerPage.png";
+import LegendPage from "../Image/ImageProjectMu/LegendPage.png";
+
+import HomePageMolla from "../Image/ImageProjectMolla/HomePage.png";
+import ProductsPageMolla from "../Image/ImageProjectMolla/ProductsPage.png";
+import ContactPageMolla from "../Image/ImageProjectMolla/ContactPage.png";
+import LoginPageMolla from "../Image/ImageProjectMolla/LoginPage.png";
+import CartPageMolla from "../Image/ImageProjectMolla/CartPage.png";
+import CheckoutPageMolla from "../Image/ImageProjectMolla/CheckoutPage.png";
+
+import HomePageRedux from "../Image/ImageProjectRedux/HomePage.png";
+import AddPageRedux from "../Image/ImageProjectRedux/AddPage.png";
+
+import HomePagePortolio from "../Image/ImageProjectPortolio/HomePage.png";
+import AboutPagePortolio from "../Image/ImageProjectPortolio/AboutPage.png";
+import ResumePagePortolio from "../Image/ImageProjectPortolio/ResumePage.png";
+import ContactPagePortolio from "../Image/ImageProjectPortolio/ContactPage.png";
+import ProjectPagePortolio from "../Image/ImageProjectPortolio/ProjectPage.png";
 
 const ArrayProject = [
   {
-    id:1,
-    src:[HomePage,MainLineupPage,ManagerPage,LegendPage],
-    Name: 'Web Manchester United',
-    Technologies: 'HTML/CSS, JavaScript',
-    Features:'Responsive on Mobile, Tablet,…',
-    Preview:'https://vanthinn.github.io/Page-Manchester-United/',
-    Source: 'https://github.com/vanthinn/Page-Manchester-United'
-},
-{
-    id:2,
-    src:[HomePage,MainLineupPage,ManagerPage,LegendPage],
-    Name: 'Web Manchester United',
-    Technologies: 'HTML/CSS, JavaScript',
-    Features:'Responsive on Mobile, Tablet,…',
-    Preview:'https://vanthinn.github.io/Page-Manchester-United/',
-    Source: 'https://github.com/vanthinn/Page-Manchester-United'
-},
-{
-    id:3,
-    src:[HomePage,MainLineupPage,ManagerPage,LegendPage],
-    Name: 'Web Manchester United',
-    Technologies: 'HTML/CSS, JavaScript',
-    Features:'Responsive on Mobile, Tablet,…',
-    Preview:'https://vanthinn.github.io/Page-Manchester-United/',
-    Source: 'https://github.com/vanthinn/Page-Manchester-United'
-},
-{
-    id:4,
-    src:[HomePage,MainLineupPage,ManagerPage,LegendPage],
-    Name: 'Web Manchester United',
-    Technologies: 'HTML/CSS, JavaScript',
-    Features:'Responsive on Mobile, Tablet,…',
-    Preview:'https://vanthinn.github.io/Page-Manchester-United/',
-    Source: 'https://github.com/vanthinn/Page-Manchester-United'
-},
-
-]
-
+    id: 1,
+    src: [HomePageMU, MainLineupPage, ManagerPage, LegendPage],
+    Name: "Web Manchester United",
+    Technologies: "HTML/CSS, JavaScript",
+    Features: "View detailed player information on Manchester United.",
+    Preview: "https://vanthinn.github.io/Page-Manchester-United/",
+    Source: "https://github.com/vanthinn/Page-Manchester-United",
+  },
+  {
+    id: 2,
+    src: [
+      HomePagePortolio,
+      AboutPagePortolio,
+      ResumePagePortolio,
+      ContactPagePortolio,
+      ProjectPagePortolio,
+    ],
+    Name: "Portfolio",
+    Technologies: "ReactJS, SASS, CSS Module",
+    Features:
+      " A website show all basic information about personal, responsive on Mobile, Tablet,…",
+    Preview: "https://portfolio-vanthinn.vercel.app/",
+    Source: "https://github.com/vanthinn/portfolio",
+  },
+  {
+    id: 3,
+    src: [
+      HomePageMolla,
+      ProductsPageMolla,
+      ContactPageMolla,
+      LoginPageMolla,
+      CartPageMolla,
+      CheckoutPageMolla,
+    ],
+    Name: "Molla Shop",
+    Technologies: "React, TailwindCSS, Firebase, Redux-toolkit",
+    Features:
+      "Register, login using Firebase, filter products, find products, display products in cart,  view detailed product information, pagination, responsive on Mobile, Tablet,",
+    Preview: "https://e-shop-vanthinn.vercel.app/",
+    Source: "https://github.com/vanthinn/e-shop",
+  },
+  {
+    id: 4,
+    src: [HomePageRedux, AddPageRedux],
+    Name: "Product--Redux-Toolkit",
+    Technologies: "React, Redux-toolkit",
+    Features: "Add, Edit, Remove product",
+    Preview: "https://product-redux-toolkit.vercel.app/product",
+    Source: "https://github.com/vanthinn/Product---Redux-Toolkit",
+  },
+];
 
 export default ArrayProject;
-

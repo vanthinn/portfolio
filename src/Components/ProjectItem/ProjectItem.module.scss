@@ -1,134 +1,97 @@
 .ProjectItemStyle {
     width: 100%;
-    min-height: 100px;
-    border-radius:2px;
-    border:2px solid var(--border-color);
+    min-height: 300px;
+    border-radius: 2px;
+    border: 2px solid var(--border-color);
     display: flex;
     margin-bottom: 80px;
-    .LeftItem{
-        width: 50%; 
-        border-right: 2px solid var(--border-color);
-        position: relative;
 
-        @keyframes animationImg{
-            from {
-                opacity: 0;
-                transform: translateX(50%);
-            }
-            to{
-                opacity: 1;
-                transform: translateX(0);
-            }
-            
-        }
-        img{
+    .LeftItem {
+        margin: 0 auto;
+        width: 50%;
+        height: 100%;
+        border-right: 2px solid var(--border-color);
+
+        img {
             width: 100%;
             height: 100%;
-            
-            
         }
 
-        .nextPage{
-            position: absolute;
-            top: 45%;
-            right: 0;
-            background-color: var(--background-color-project);
-            display: flex;
-            align-items: center;
-            padding: 3px 1.2px;
-
-            svg{
-                font-size:1.5rem;
-            }
-        }
-
-        .prePage{
-            position: absolute;
-            top: 45%;
-            left: 0;
-            background-color: var(--background-color-project);
-            display: flex;
-            align-items: center;
-            padding: 3px 1.2px;
-
-            svg{
-                font-size:1.5rem;
-            }
-        }
-        
 
     }
 
-    .RightItem{
+    .RightItem {
         width: 50%;
+        height: 100%;
 
-        .MainTitle{
+        .MainTitle {
             text-align: center;
-            padding:8px 0;
+            padding: 8px 0;
             border-bottom: 1px solid var(--border-color);
             color: var(--project-title);
             font-weight: 600;
         }
 
-        .MainContent{   
-           padding:12px 0 12px 20px;
-            
-            .ContentItem{
-                display:flex;
+        .MainContent {
+            padding: 12px 0 12px 20px;
+
+            .ContentItem {
+                display: flex;
 
                 a,
-                p{
+                p {
                     word-wrap: break-word;
-                    font-size:0.9rem;
+                    font-size: 0.9rem;
                     padding-bottom: 8px;
-                    
+
 
                 }
-                a:hover{
+
+                a:hover {
                     color: var(--primary-color);
                 }
 
 
-                .LeftContent{
+                .LeftContent {
                     width: 33.33%;
 
                 }
 
-                .RightContent{
+                .RightContent {
                     width: 66.67%;
                 }
             }
         }
-        
+
     }
-    @media (max-width: 1023px){
+
+    @media (max-width: 1023px) {
         flex-direction: column;
 
         .RightItem,
-        .LeftItem{
+        .LeftItem {
             width: 100%;
         }
     }
-    
-    @media (min-width: 740px) and (max-width :1023px){
-    
-    }
-    
-    @media (max-width: 739px){
-      
-    }
+
+    @media (min-width: 740px) and (max-width :1023px) {}
+
+    @media (max-width: 739px) {}
 
 }
+
 @keyframes animationProject {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.04);
-    }  
+    }
 }
-.ProjectItemStyle:hover{
+
+.ProjectItemStyle:hover {
     cursor: pointer;
-    border:2px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     animation: animationProject ease 1.2s;
 }
