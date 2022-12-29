@@ -1,28 +1,35 @@
 .ProjectItemStyle {
     width: 100%;
-    min-height: 300px;
+    height: 300px;
     border-radius: 2px;
     border: 2px solid var(--border-color);
     display: flex;
     margin-bottom: 80px;
 
     .LeftItem {
-        margin: 0 auto;
+
+
         width: 50%;
-        height: 100%;
         border-right: 2px solid var(--border-color);
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
 
+        .Slipe {
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                vertical-align: baseline;
+            }
+        }
 
     }
 
     .RightItem {
         width: 50%;
         height: 100%;
+        overflow: hidden;
+
 
         .MainTitle {
             text-align: center;
@@ -34,6 +41,8 @@
 
         .MainContent {
             padding: 12px 0 12px 20px;
+
+            // overflow-y: scroll;
 
             .ContentItem {
                 display: flex;
@@ -58,6 +67,7 @@
                 }
 
                 .RightContent {
+
                     width: 66.67%;
                 }
             }

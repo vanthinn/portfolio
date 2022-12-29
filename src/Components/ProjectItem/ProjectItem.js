@@ -10,7 +10,6 @@ const splideOptions = {
   rewind: true,
   pagination: false,
   speed: 300,
-  lazyLoad: true,
   arrows: true,
 };
 
@@ -18,7 +17,7 @@ function ProjectItem({ src, name, technologies, features, preview, source }) {
   return (
     <div className={styles.ProjectItemStyle}>
       <div className={styles.LeftItem}>
-        <Splide options={splideOptions}>
+        <Splide className={styles.Slipe} options={splideOptions}>
           {src.map((img, index) => (
             <SplideSlide key={index}>
               <img src={img} alt="MU" />
