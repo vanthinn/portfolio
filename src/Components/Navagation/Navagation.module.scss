@@ -16,8 +16,9 @@
         padding: 1rem 0;
 
         img {
-            width: 65%;
-            border-radius: 50%;
+            width: 200px;
+            height: 220px;
+            border-radius: 5%;
             border: 8px solid var(--border-color);
         }
 
@@ -30,8 +31,14 @@
     }
 
     .listNavItem {
+        margin-top: 24px;
         width: 100%;
-        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+
+
 
         .btnActive {
             color: var(--white-color);
@@ -39,12 +46,16 @@
         }
 
         li {
+
             display: block;
+            width: 100%;
+            text-align: center;
 
             a {
                 display: block;
                 position: relative;
                 padding: 0.4rem 0;
+                margin: 4px 0;
                 z-index: 10;
                 font-weight: 600;
                 letter-spacing: 1px;

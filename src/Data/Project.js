@@ -13,11 +13,9 @@ import CheckoutPageMolla from "../Image/ImageProjectMolla/CheckoutPage.png";
 import HomePageRedux from "../Image/ImageProjectRedux/HomePage.png";
 import AddPageRedux from "../Image/ImageProjectRedux/AddPage.png";
 
-import HomePagePortolio from "../Image/ImageProjectPortolio/HomePage.png";
-import AboutPagePortolio from "../Image/ImageProjectPortolio/AboutPage.png";
-import ResumePagePortolio from "../Image/ImageProjectPortolio/ResumePage.png";
-import ContactPagePortolio from "../Image/ImageProjectPortolio/ContactPage.png";
-import ProjectPagePortolio from "../Image/ImageProjectPortolio/ProjectPage.png";
+import HomePageQuiz from "../Image/ImageProjectPortolio/HomePageQuiz.png";
+import QuestionPage from "../Image/ImageProjectPortolio/QuestionPage.png";
+import ResultPage from "../Image/ImageProjectPortolio/ResultPage.png";
 
 const ArrayProject = [
   {
@@ -31,19 +29,13 @@ const ArrayProject = [
   },
   {
     id: 2,
-    src: [
-      HomePagePortolio,
-      AboutPagePortolio,
-      ResumePagePortolio,
-      ContactPagePortolio,
-      ProjectPagePortolio,
-    ],
-    Name: "Portfolio",
-    Technologies: "ReactJS, SASS, CSS Module",
+    src: [HomePageQuiz, QuestionPage, ResultPage],
+    Name: "Quizes Game",
+    Technologies: "VueJS, TailwindCSS",
     Features:
-      " A website show all basic information about personal, responsive on Mobile, Tablet,…",
-    Preview: "https://portfolio-vanthinn.vercel.app/",
-    Source: "https://github.com/vanthinn/portfolio",
+      " A website for users to experience questions with different topics through the game Quiz",
+    Preview: "https://vuejs-vueuse-motion.vercel.app",
+    Source: "https://github.com/vanthinn/vuejs-vueuse-motion",
   },
   {
     id: 3,
